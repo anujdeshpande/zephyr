@@ -25,7 +25,9 @@ Supported Features
 
 .. zephyr:board-supported-hw::
 
-SPI, I2C, PWM and ADC are present on the SoC but not yet supported in Zephyr.
+Analog inputs are provided by an on-board TI ADS1015, a 12-bit, 4-channel
+I2C ADC — the SoC itself has no ADC. GPIO pin interrupts are not yet
+supported.
 
 Connections and IOs
 ===================

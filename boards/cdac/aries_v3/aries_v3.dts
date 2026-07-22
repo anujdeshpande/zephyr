@@ -58,3 +58,42 @@
 &gpio1 {
 	status = "okay";
 };
+
+&i2c0 {
+	status = "okay";
+};
+
+&i2c1 {
+	status = "okay";
+};
+
+&i2c2 {
+	status = "okay";
+
+	/* On-board ADC behind the third I2C controller */
+	adc0: ads1015@48 {
+		compatible = "ti,ads1015";
+		reg = <0x48>;
+		#io-channel-cells = <1>;
+	};
+};
+
+&spi0 {
+	status = "okay";
+};
+
+&pwm {
+	status = "okay";
+};
+
+&timer0 {
+	status = "okay";
+};
+
+&timer1 {
+	status = "okay";
+};
+
+&timer2 {
+	status = "okay";
+};

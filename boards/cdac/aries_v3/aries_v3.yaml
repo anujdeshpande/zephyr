@@ -7,8 +7,13 @@ toolchain:
   - cross-compile
 ram: 256
 supported:
+  - adc
+  - counter
   - gpio
+  - i2c
+  - pwm
   - serial
+  - spi
 testing:
   ignore_tags:
     - net
