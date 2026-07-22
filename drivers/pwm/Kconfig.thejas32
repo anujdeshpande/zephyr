@@ -1,0 +1,9 @@
+# Copyright (c) 2026 Anuj Deshpande
+# SPDX-License-Identifier: Apache-2.0
+
+config PWM_THEJAS32
+	bool "C-DAC THEJAS32 PWM driver"
+	default y
+	depends on DT_HAS_CDAC_THEJAS32_PWM_ENABLED
+	help
+	  Enable the PWM driver for the C-DAC THEJAS32 SoC.
