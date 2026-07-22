@@ -1,0 +1,9 @@
+# Copyright (c) 2026 Anuj Deshpande
+# SPDX-License-Identifier: Apache-2.0
+
+config SPI_THEJAS32
+	bool "C-DAC THEJAS32 SPI driver"
+	default y
+	depends on DT_HAS_CDAC_THEJAS32_SPI_ENABLED
+	help
+	  Enable the SPI driver for the C-DAC THEJAS32 SoC.
