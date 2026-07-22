@@ -1,0 +1,9 @@
+# Copyright (c) 2026 Anuj Deshpande
+# SPDX-License-Identifier: Apache-2.0
+
+config I2C_THEJAS32
+	bool "C-DAC THEJAS32 I2C driver"
+	default y
+	depends on DT_HAS_CDAC_THEJAS32_I2C_ENABLED
+	help
+	  Enable the I2C driver for the C-DAC THEJAS32 SoC.

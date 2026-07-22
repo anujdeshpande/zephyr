@@ -1,0 +1,17 @@
+# Copyright (c) 2026 Anuj Deshpande
+# SPDX-License-Identifier: Apache-2.0
+
+description: C-DAC THEJAS32 I2C controller
+
+compatible: "cdac,thejas32-i2c"
+
+include: i2c-controller.yaml
+
+properties:
+  reg:
+    required: true
+
+  input-clock-frequency:
+    type: int
+    required: true
+    description: Frequency of the clock feeding the controller, in Hz.
